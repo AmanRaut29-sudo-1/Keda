@@ -15,11 +15,11 @@ For batch workloads, KEDA takes a different approach: instead of scaling a runni
 <img width="1470" height="1280" alt="image" src="https://github.com/user-attachments/assets/f93209d7-4738-42d1-ad12-2989454a80ac" />
 
 KEDA runs three components inside the Kubernetes cluster, each with a distinct responsibility:-
--> keda-operator :-
--> keda-metrics-apiserver
--> keda-admission-webhooks
+1. keda-operator
+2. keda-metrics-apiserver
+3. keda-admission-webhooks
 
 KEDA uses Custom Resource Definitions (CRDs) to manage scaling behaviour :- 
--> ScaledObject
--> ScaledJob
--> TriggerAuthentication
+1. ScaledObject
+2. ScaledJob
+3. TriggerAuthentication
