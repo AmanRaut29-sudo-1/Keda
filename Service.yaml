@@ -1,0 +1,13 @@
+apiVersion: v1 # api version
+kind: Service # type service 
+metadata:
+  name: nginx-app # Name of service 
+spec:
+  type: NodePort # type of service (nodeport)
+  selector:
+    app: nginx-app # used to select the pod which has label (nginx-app)
+  ports:
+    - port: 80 # port used by service 
+      protocol: TCP
+      targetPort: 80 # port used by pods for running  
+      nodePort: 31001 # port given to node , so that we can access it from outside the cluster 
